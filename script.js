@@ -43,12 +43,11 @@ function game() {
 
     if(playerSelection === 'SCISSOR')
       playerSelection = 'SCISSORS';
-    console.log(playerSelection);
 
     while(playerSelection !== 'ROCK' && playerSelection !== 'PAPER' && playerSelection !== 'SCISSORS') {
       playerSelection = prompt('Invalid choice. Enter rock, paper, or scissors').toUpperCase();
       if(playerSelection === 'SCISSOR')
-        playerSelction = 'SCISSORS';
+        playerSelection = 'SCISSORS';
     }
 
     let computerSelection = computerPlay();
